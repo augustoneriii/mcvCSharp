@@ -1,0 +1,37 @@
+dotnet new console
+
+dotnet new web 
+
+dotnet new webapi
+
+dotnet run
+
+dotnet watch run
+
+dotnet add package Microsoft.EntityFrameworkCore
+
+dotnet add package Microsoft.EntityFrameworkCore.Design
+ 
+dotnet add package Pomelo.EntityFrameworkCore.MySql
+
+dotnet add package Swashbuckle.AspNetCore.Annotations
+
+dotnet add package Microsoft.AspNetCore.Authentication.JwtBearer
+
+dotnet add package System.IdentityModel.Tokens.Jwt
+
+dotnet tool install --global dotnet-ef
+
+dotnet ef migrations add CreateProduct
+
+dotnet ef database update
+
+dotnet tool install --global dotnet-outdated-tool
+
+dotnet outdated --upgraded
+
+
+
+  "Database":{
+    "MySql": "Server=localhost;Database=products;User=root;Password=root;Port=5555"
+  },
